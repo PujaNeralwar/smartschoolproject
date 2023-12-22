@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Roboto:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: 'Roboto',sans-serif;
+   background-color: #fcfbfb; 
+  
+} 
+.container {
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flexSB {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #05635b;
+  transition: 0.5s;
+}
+.icon:hover {
+  cursor: pointer;
+  background-color: #05635b;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  padding: 20px;
+}
+li {
+  list-style-type: none;
+}
+.row {
+  width: 50%;
+}
+button {
+  /* padding: 17px 30px; */
+  /* background-color: #fff; */
+  color:black;
+  font-weight: 200;
+  border: none;
+  
+  /* margin: 30px 10px 0 0; */
+  border: 5px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
+  /* box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%); */
+  transition: 0.5s;
+}
+button i {
+  margin-left: 20px;
+}
+button:hover {
+  box-shadow: none;
+  background-color:white;
+  color: #05635b;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.primary-btn {
+  background-color: #1eb2a6;
+  color: #fff;
+}
+nav{
+  top:40px;
+  position: fixed;
+  z-index: 99;
+  margin: auto;
+  margin-left: 80px ;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,0 +1,732 @@
+
+.button2{
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    color:blue;
+  margin-left: 10px;
+    height: 25px;
+    width: 180px;
+    
+}
+
+.button2:hover{
+    border-radius: 10px;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    box-shadow: 2px 2px 2px 2px rgb(216, 205, 205);
+}
+/**********************user container*************************/
+
+.userContainer{
+    padding-bottom:20px;
+    background-color: rgb(236, 234, 234);
+    display: flex;
+    flex-direction: column;
+
+}
+.userContainer select{
+  margin: 10px;
+  margin-bottom: 20px;
+  width: 200px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.userBox{
+
+  padding-right:50px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  width: 80%;
+  align-items: center;
+}
+.userBox button{
+  margin-top: 30px;
+  background-color: blue;
+  color: bisque;
+  width: 60px;
+}
+.userBox .box1{
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+.box1 label{
+  font-weight: 500;
+}
+.box1 ::placeholder{
+  padding-left: 10px;
+}
+.userButto{
+  float: right;
+  margin-top:50px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+.userButto button{
+  background-color: #212121;
+  color: #fff;
+  margin:0px 10px;
+  border-radius: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+  transform: scale(0.9);
+  
+
+}
+.userButto button:hover{
+  background-color: #fff;
+  color: #212121;
+  border: 0.3px solid #212121;
+  margin:0px 10px;
+  border-radius: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+  transform: scale(1);
+  
+
+}
+
+table th{
+  background-color: rgb(234, 235, 235);
+  color: #212121;
+  font-weight: 600;
+
+}
+
+.modal-wrapper{
+  position: fixed;
+  left: 0;
+  right:0;
+  top:0;
+  bottom:0;
+
+  
+  /* background-color: rgb(105, 96, 96); */
+  /* background-color: rgba(189, 189, 189, 0.7); */
+   background-color: rgba(31, 28, 28, 0.5); 
+
+}
+.userContainer{
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  border-radius: 0.3px;
+  border: 1px solid blue;
+  margin: 0;
+  padding: 0;
+  z-index: 99;
+  
+}
+.crossicon{
+  display: flex;
+  flex-direction: row;
+  border-bottom:2px solid #212121;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+.crossicon label{
+  font-size:larger;
+  font-weight: 600;
+  margin-left: 230px;
+  width: 98%;
+}
+.crossicon i{
+  
+  float:right;
+  /* margin-left:230px ; */
+  cursor: pointer;
+}
+.details{
+  background-color: rgb(247, 249, 249);
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.details select{
+  padding-left: 20px;
+  margin-left: 40px;
+}
+
+
+/******************AdminSetting**************************/
+.adminsetting{
+  margin: 40px;
+}
+.adminsetting button{
+  background-color: blue;
+  color: #fff;
+  margin-left: 20px;
+  width: 50px;
+  border-radius: 5px;
+
+
+}
+.adminsetting button:hover{
+  border:2px solid orange;
+}
+
+.divbutton{
+  margin: 20px;
+  margin-bottom: 0px;
+  background-color: rgb(221, 225, 225);
+  height: 40px;
+  justify-content: justify;
+  align-items: center;
+  
+  
+}
+.divbutton button{
+  background-color:rgb(221, 225, 225) ;
+  margin: 0;
+  height:40px;
+  font-weight: 500;
+  margin-right: 5px;
+  border-right: 2px solid white;
+}
+.divbutton button:hover{
+  border-bottom: 2px solid orange;
+  color:blue;
+  background-color: #fff;
+}
+
+/************************* Email Notification************************/
+
+.form-controlz{
+  display: block;
+  width: 50%;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  background-color: rgb(236, 240, 246);
+  border: 1px solid white;
+  
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s case-in-out, box-shadow 0.15s;
+  
+
+  margin-left: 30%;
+}
+
+.form-group label {
+  font-weight: bold; 
+  margin-bottom: 5px; 
+  display: block; 
+}
+.containerz{
+  background-color: white;
+  width: 95%;
+  border: 1px solid rgb(201, 199, 199);
+   padding: 80px;
+}
+
+.text-headingz{
+  color: red;
+}
+ .paragraph1{
+  text-align: start;
+  word-spacing: normal;
+  font-size: 15px;
+  color: black;
+
+
+} 
+.paragraphz{
+  text-align: start;
+  word-spacing: normal;
+  font-size: 12px;
+
+} 
+.text-headinga{
+  color: red;
+  font: bolder;
+
+}
+
+.form-horizontalz{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+/***************ADMISSION FORM**********************/
+.admissionhead{
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: #ecf1ec;
+  margin-bottom: 40px;
+
+}
+.divAdm{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* margin: auto; */
+ 
+
+}
+.divAdm .admfirstdiv{
+  width: 80%;
+  /* margin: 10px; */
+
+}
+.admseconddiv{
+  width: 20%;
+}
+.form-lable{
+  /* margin-bottom: 0.5rem; */
+  /* display: inline-block; */
+  font-weight: bold;
+
+}
+.form-control{
+  
+  width:40%;
+  margin:0px 10px;
+  /* padding: 0.375rem 0.75rem; */
+  font-size: 1rem;
+  /* font-weight: 400; */
+  /* line-height: 1.5; */
+  color: black;
+  /* background-color: beige; */
+  /* background-clip: padding-box;
+  border: 1px solid white; */
+  
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s case-in-out, box-shadow 0.15s;
+
+
+}
+.form-group{
+  /* margin-bottom: rem; */
+  display: flex;
+  flex-direction: row;
+ 
+  padding: 0px 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  
+}
+.form-group .stdiv1{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+
+}
+.stdiv1 .stdrd{
+  margin:0px 30px;
+  padding: 0px 20px;
+}
+.stdrd input{
+  margin: 0px 10px;
+}
+
+
+.form-group .stdiv2{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+
+}
+.form-group label{
+  color: blue;
+}
+.form-group select{
+  display: block;
+  width: 200px;
+  text-align: center;
+  /* padding: 0.375rem 2.25rem 0.375rem 0.75rem; */
+  -moz-padding-start: calc(0.75rem, 0.75rem);
+  font-size: 1rem;
+  font-weight: 400;
+  /* line-height: 1.5; */
+  color: black;
+  /* background-color: rgb(163, 237, 237); */
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  /* background-size: 16px 12px; */
+  /* border: 1px solid rgb(241, 241, 189); */
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s;
+  /* -webkit-appearance: none; */
+  /* appearance: none; */
+  margin-left: 20px;
+  border-color: rgb(167, 179, 175);
+  margin-right: 40px;
+  
+}
+.btn{
+  color: white;
+  background-color: rgb(136, 136, 242);
+  border-color: brown;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.image-upload-container {
+  /* padding: 2rem; */
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+
+.box-decoration {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-upload-label {
+  font-size: 1.0rem;
+  font-weight: bold;
+  margin-bottom:20px;
+  cursor: pointer;
+}
+
+.image-upload-input {
+  display: none;
+}
+
+.image-upload-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0.3rem 1.2rem;
+  margin-top:1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.image-upload-button:hover {
+  background-color: #3e8e41;
+}
+
+.img-display-before {
+  height: 200px;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.img-display-after {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+.stdnam{
+  display:flex;
+  flex-direction: row;
+  margin:0px 20px;
+  
+}
+.stdbutton{
+  float: right;
+  margin-bottom: 40px;
+  background-color: blue;
+  color:#fff;
+  font-weight: 600;
+  border: 1px solid black;
+  width: 200px;
+  border-radius: 5px;
+}
+
+
+
+/******************dynamic form*********************/
+
+.userContainer1{
+  position: fixed;
+  /* top:50%;
+  left: 50%; */
+
+  /* transform: translate(-50%,-50%); */
+  top:10%;
+  left:5%;
+  width: 70%;
+  background-color:rgb(0, 0, 0);
+  opacity: 0.8;
+  border-radius: 0.3px;
+  border: 1px solid blue;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  z-index: 1;
+  
+}
+.crossicon{
+  display: flex;
+  flex-direction: row;
+  border-bottom:2px solid #dcd6d6;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  /* border-radius: 5px; */
+}
+.crossicon label{
+  font-size:10%;
+  font-weight: 600;
+  margin-left: 230px;
+  width: 100%;
+  color:orange;
+}
+.crossicon i{
+  
+  float:right;
+  /* margin-left:230px ; */
+  cursor: pointer;
+}
+.details{
+  
+  background-color: rgb(247, 249, 249);
+  padding-top: 0px;
+  padding-left: 0px;
+  background-color:#010406;
+  opacity: 0.7;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  
+  
+}
+.details .divbutt{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  
+  border-right: 1px solid white;
+}
+.details button{
+  /* padding-left: 20px; */
+  margin:10px;
+  padding-bottom: 30px;
+  background:none;
+  color: #fff;
+  border-bottom: 1px solid white;
+}
+.details button:hover{
+  color: orange;
+}
+.details .headbox{
+  display: flex;
+  flex-direction: row;
+}
+.details .sbradio label{
+  padding-right: 150px; 
+
+}
+.headbox .box1{
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.box1 label{
+  font-weight: bold;
+}
+.box1 select{
+  margin-top: -5px;
+  margin-left: -10px;
+  width: 400px;
+}
+
+
+/*************** feedback forms*******************/
+.sbmain{
+  /* background-color: #f1f3f4; */
+  width: 100%;
+  height: 90vh;
+}
+.sbmain .sbfdiv{
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid  rgb(218, 214, 214);
+
+}
+.sbhead{
+  display:flex;
+  flex-direction:row;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  background-color: #fff;  
+  border-bottom: 1px solid rgb(218, 214, 214);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sbhead button{
+margin: 10px;
+/* padding: 10px; */
+color: blue;
+text-align: center;
+border: 1px solid blue;
+float: right;
+border-radius: 5px;
+position: absolute;
+right: 0;
+background-color: #fff;
+font-weight: 500;
+
+}
+.sbhead label{
+  font-size: 35px;
+  color: rgb(79, 72, 72);
+}
+.sbhead .yrdiv{
+  position: relative;
+  right: -30%;
+  width: 500px;
+  color: blue;
+  margin: 0px;
+}
+.yrdiv select{
+  width: 200px;
+  color: blue;
+  border-color: blue;
+}
+.sbmainbox{
+  width: 90%;
+  background-color:#fff;
+  margin: auto;
+  padding: 10px;
+  margin-top: 60px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sbradio{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+}
+.sbradio label{
+  margin-left:20px;
+  
+}
+
+.sbmainbox .sbutton{
+  position:absolute;
+  right: 10%;
+  z-index:1;
+  
+  /* padding-left: 10px; */
+}
+.sbutton button{
+  color: blue;
+  margin-left: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight:400;
+  background-color: #fff;
+  
+}
+.sbmainbox .lb{
+  font-size: 15px;
+}
+.lb span{
+  font-weight: bold;
+}
+/*******manage rating*************/
+
+  .userContainer2{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 0.3px;
+    border: 1px solid blue;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+    width: 60%;
+    
+  }
+  
+
+.crossicon{
+  display: flex;
+  flex-direction: row;
+  border-bottom:2px solid gray;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  /* border-radius: 5px; */
+}
+.crossicon label{
+  font-size:larger;
+  font-weight: 600;
+  margin-left: 230px;
+  width: 100%;
+  color:orange;
+}
+.crossicon i{
+  
+  float:right;
+  /* margin-left:230px ; */
+  cursor: pointer;
+}
+.detailss{
+  
+  background-color: rgb(247, 249, 249);
+  padding-top: 0px;
+  padding-left: 0px;
+  background-color:#fff;
+  /* opacity: 0.7; */
+  color:black;
+  
+}
+.detailss button{
+  padding-left: 250px;
+  margin:20px;
+  background:none;
+  color: blue;
+}
+.detailss button:hover{
+  color: red;
+}
+.detailss .headbox{
+  display: flex;
+  flex-direction: row;
+}
+.detailss .sbradio label{
+  padding-right: 200px; 
+
+}
+.headbox .box1{
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.box1 label{
+  font-weight: bold;
+}
+
+.active{
+  
+  color:blue;
+  font-weight: 800;
+  font-size: medium;
+  font-weight: bold;
+   background-color: aqua;
+  border-color: #4CAF50;
+}
+.inactive{
+  color: #163142;
+}
+.box1 select{
+  margin-top: -5px;
+  margin-left: -10px;
+  width: 400px;
+}
