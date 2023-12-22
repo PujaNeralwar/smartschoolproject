@@ -92,6 +92,7 @@ const HRDashboard = () => {
           <div className=' contained'>
            
           <Bar data={trainstaff} />
+
           </div>
           
         </div>
@@ -101,21 +102,8 @@ const HRDashboard = () => {
 
         <div className="box">
         <div className='smalldash'>
-          <div className='dashhead'>
-         
-            <h6>Branch <label>(1)</label>  <span style={{marginLeft:"70px"}}><button style={{color:"red",backgroundColor:"#fff"}}>Data Checker</button>
-            </span> <i class="fa-solid fa-arrows-rotate"></i></h6>
-          </div>
-          <div className=' contained'>
-          <div>
-          <p>State<i class="fa-solid fa-chalkboard-user"></i></p>
-          </div>
-          <div style={{marginLeft:"40px"}}>
-            <p>1</p>
-          </div>
-
-          </div>
-         
+          
+          
         </div>
         <div className='smalldash'>
          <div className='dashhead'>
