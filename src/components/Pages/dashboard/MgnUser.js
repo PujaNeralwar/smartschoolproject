@@ -16,6 +16,7 @@ const MgnUser = () => {
     <input placeholder='Serach in Table'></input>
     </div>
     {createAdmin && <CreateAdmin  closeAdmin={closeAdmin}/>}
+    
         <table>
         <tr>
             <th>SR No</th>

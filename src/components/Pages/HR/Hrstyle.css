@@ -201,7 +201,7 @@
 }
  .active2{
     color: blue;
-    background-color:red;
+    background-color: aqua;
 }
 
 /******************* Staff Details*********************/
@@ -298,10 +298,14 @@
     width: 98%;
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 20px;
     border: 1px solid rgb(163, 163, 182);
     border-radius: 10px;
     padding: 10px;
     
+}
+.custom1-list ol {
+  list-style-type: disc;
 }
 .innerstcontainer{
     display: flex;
@@ -342,7 +346,9 @@
     width: 200px;
     border-color: rgb(0, 132, 255);
 }
-
+.trstyle{
+    color: black;
+}
 
 /******teacher mgn *****************/
 .top3{
@@ -508,6 +514,16 @@
     
     
 }
+.updatestaffcontainer .rightside1{
+    width: 100%;
+    background-color:#fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    
+    
+}
 .top3 .top3buttondiv button{
     
 color: blue;
@@ -524,6 +540,7 @@ margin-right: 10px;
     margin-top: 0px;
     margin-bottom: 10px;
 }
+
 .twodivstaff button{
     background-color:rgb(19, 122, 220) ;
     color: #fff;
@@ -678,5 +695,161 @@ margin-left: 80%;
     background-color: #fff;
 
  }
+/**********************Attendance******/
+.getatt{
+    display:flex;
+    flex-direction: row; 
+    margin: 20px;
+    
+    
+}
+ table tr td{
+    border:1px solid gray;
+}
+.getatt p{
+    color: black;
+}
+.getatt .getleft{
+    width: 50%;
+    padding-left: 300px;
+}
+.getatt .getright{
+    width: 50%;
+    padding-left: 200px;
+}
 
+/*************Modal wrapper************/
+.modal-wrapper1{
+    position: fixed;
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0; 
+    /* background-color: rgb(105, 96, 96); */
+    /* background-color: rgba(189, 189, 189, 0.7); */
+     background-color: rgba(4, 4, 4, 0.5); 
+  
+  }
+  .modaluserContainer{
+    position: fixed;
+    /* top:50%;
+    left: 50%; */
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 0.3px;
+    border: 1px solid blue;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+    width:70% ;
 
+    right: 0;
+      top: 20%;
+      transform: translateY(-50%);
+      animation: moveToLeft 0.5s forwards;
+    
+  }
+  .modalHeading{
+    display: flex;
+    flex-direction: row;
+    border-bottom:1px solid #212121;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  .modalHeading label{
+    font-size:larger;
+    font-weight: 600;
+    text-align: center;
+    width: 98%;
+  }
+  .modalHeading i{
+    
+    float:right;
+    /* margin-left:230px ; */
+    cursor: pointer;
+  }
+  .modaldetails{
+    background-color: rgb(247, 249, 249);
+    padding-top: 20px;
+    padding-left: 10px;
+    margin: 20px;
+  }
+  .modalupp{
+    display: flex;
+    gap: 40px;
+    
+  }
+  /*******/
+  @keyframes moveToLeft {
+    0% {
+      right: 0;
+    }
+    100% {
+      right: 50%;
+      transform: translateX(50%); /* Move to the middle of the page */
+    }
+  }
+  /*********************************/
+  .staffcontainer .tophead{
+    border-bottom: 1px solid rgb(42, 41, 41);
+    background-color: rgb(217, 251, 241);
+    width: 101.40%;
+    margin: -10px;
+    padding: -10px;
+  }
+  .tophead label{
+    margin: 10px;
+  }
+  .staffcontainer .addStaffContainer {
+     margin: 50px;
+     display: grid;
+     grid-template-columns:  auto auto auto auto;
+     gap: 30px 30px;
+  }
+  .addStaffContainer .addcol{
+    display: flex;
+    flex-direction:column;
+  }
+  .mgndiv{
+    margin: 50px;
+    padding: 20px;
+  }
+ 
+  .SDashboard .mgndiv1{
+    width: 100%;
+    
+    margin: 10px;
+  }
+  .mgndiv1 table tr td {
+    border:1px solid gray;
+  }
+  /********************/
+  .teachmgn{
+    width :95%;
+    border: 1px solid rgb(57, 85, 247);
+    
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;  
+    padding: 20px; 
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .addcols{
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+
+  }
+  .addcols label{
+    font-weight: 600;
+  }
+  .emptyDiv{
+    width :95%;
+    border: 1px solid gray;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:30px;
+    text-align: center;
+  }

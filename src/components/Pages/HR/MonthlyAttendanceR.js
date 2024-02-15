@@ -1,6 +1,62 @@
 import React from 'react'
 import '../HR/Hrstyle.css';
+import { useState } from 'react';
 const MonthlyAttendanceR = () => {
+
+const [getatt,setGetAtt] = useState(false);
+
+const toggleDiv = () => {
+  setGetAtt(!getatt);
+};
+
+
+  const GetAttendance =() => {
+    return (
+      <>
+
+  
+<div className='twodiv'> 
+<div className='leftdiv'> <i class="fa-solid fa-file-excel fa-xl" style={{color: "#35f3dd;"}}></i></div>
+<div className='rgtdiv'><input placeholder='Serach in Table'></input> </div>
+</div>
+
+<table style={{margin:"10px"}}>
+<tr>
+<th>SR No</th>
+<th>Staff Name</th>
+<th>Staff Code</th>
+<th>Biometric Code</th>
+<th>Designation</th>
+<th>Staff Department</th>
+<th>Status</th>
+<th>Joining Date</th>
+<th>Total Days</th>
+<th>Working Days</th>
+<th>Paid Days</th>
+<th style={{color:'green'}}>Present Days</th>
+<th style={{color:'blue'}}>Absent Days</th>
+<th style={{color:'violet'}}>WeekOffs</th>
+<th style={{color:'darkred'}}>Holidays</th>
+<th style={{color:'orange'}}>Leaves</th>
+
+
+</tr>
+<tr>
+<td colSpan={16}></td>
+
+  
+</tr>
+
+</table>
+
+      </>
+    )
+
+  } 
+
+
+
+
   return (
     <>
         <div className="SDheading"><span>HR </span><label> / Staff Attendance / Monthly Attendance Report </label> </div>
@@ -40,13 +96,12 @@ const MonthlyAttendanceR = () => {
              <input type="date" style={{width:"250px"}}></input>
              </div>
                 
-             <button style={{backgroundColor:"blue",color:"#fff",marginTop:"40px"}}>Get Attendance</button>
+             <button style={{backgroundColor:"blue",color:"#fff",marginTop:"40px"}} onClick={toggleDiv}>Get Attendance</button>
              
           </div>
+          {getatt && <GetAttendance/>}
 
-        
-
-        
+            
 
         </div>
 

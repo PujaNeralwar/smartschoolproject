@@ -2,7 +2,7 @@ import React from 'react'
 import "../common/Header.css";
 import { useState } from 'react';
 
-import Dashboard from './dashboard/Dashboard';
+
 import AttendanceSummary from './HR/AttendanceSummary';
 import AbsentSummary from './HR/AbsentSummary';
 import QuickAction from './HR/QuickAction';
@@ -88,7 +88,9 @@ const HumanR = () => {
   const StaffdetailsMenu = () => {
     return(
       <>
+      
        <div>
+       
         {/* <div className='modal-wrapper'></div>  */}
      <div className="userContainer1">
      <div className='crossicon'> 
@@ -103,7 +105,7 @@ const HumanR = () => {
        </div>
 
        <div className='divbutt'>
-       <button  onClick={() => {handleOnClick('3');setShowDiv(false);setHrdashboard(false) ;}}>Staff Group</button>
+       <button onClick={() => {handleOnClick('3');setShowDiv(false);setHrdashboard(false) ;}}>Staff Group</button>
        <button onClick={() => {handleOnClick('4');setShowDiv(false);setHrdashboard(false) ;}}>Staff Training and PD</button>
        </div>
        

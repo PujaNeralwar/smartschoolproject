@@ -10,8 +10,8 @@ const MakePayment = () => {
 <div className='MakePaymentHeading'>
    <label>Receipt Entry</label>
    <a style={{fontSize:'10pt'}}>View Settings</a>
-   <table className='MakePaymentTable'>
-    <tr>
+   <table className='MakePaymentTable1'>
+    <tr className='paymenttr'>
         <td style={{fontSize:'7pt'}}><span> Default Search Criteria &nbsp;:&nbsp; </span> <label style={{fontSize:'7pt',width:'65px'}}>Student Name</label><a><i class="fa-solid fa-pencil"></i></a></td>
         <td style={{fontSize:'7pt'}}>SMS Alert &nbsp;<i class="fa-solid fa-circle-question"></i> :&nbsp;&nbsp;<span style={{color:'red'}}>OFF</span></td>
         <td style={{fontSize:'7pt'}}>WhatsApp Alert&nbsp; <i class="fa-solid fa-circle-question"></i> :&nbsp;&nbsp;<span style={{color:'red'}}>OFF</span></td>

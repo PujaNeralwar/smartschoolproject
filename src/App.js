@@ -35,8 +35,9 @@ const App = () => {
     
   return (
     <>
-     
+      
       <div>
+      
       <Head1 /> 
       <nav className='flexSB'>
             <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>

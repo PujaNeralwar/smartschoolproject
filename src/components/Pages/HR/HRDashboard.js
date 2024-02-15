@@ -55,8 +55,50 @@ const staffdata = {
         
       }
     ]
+  };
+
+  const EmployeeAge = {
+
+    labels: ["<18", "18-21", "22-25", "26-30","31-40","41-55","55+"],
+    datasets: [
+      {
+        label: 'Female',
+        data:[0,0,6,4,2,2,0],
+        backgroundColor: '#61DBFB',
+        barThickness: 25,
+      },
+      {
+        label: 'Male',
+        data:[0,1,1,6,7,7,4],
+        backgroundColor: 'darkgreen',
+        barThickness: 25,
+      }
+    ]
+  };
+  const options2 = {
+    scales: {
+      x: {
+        stacked: true
+      },
+      y:{
+        stacked: true
+      }
+    }
   }
 
+  const YrOrg = {
+
+    labels: ["0-2", "2-4", "4-6", "6-8","8-10","10-12","12-14","14+"],
+    datasets: [
+      {
+        
+        data:[35,3,2,5,0,0,0,0],
+        backgroundColor: 'green',
+        barThickness: 25,
+      },
+      
+    ]
+  };
   
 
 const HRDashboard = () => {
@@ -102,83 +144,26 @@ const HRDashboard = () => {
 
         <div className="box">
         <div className='smalldash'>
+         <Bar data={EmployeeAge} options ={options2}
+
+         />
           
           
         </div>
-        <div className='smalldash'>
-         <div className='dashhead'>
-         <h6> Concern  <span style={{marginLeft:"80px"}}><i class="fa-solid fa-users" style={{marginRight:"10px"}}></i> <label>New Joinee</label> 
-            </span></h6>
-          </div>
-          <div className='contained'>
-            <div>
-            <p><i class="fa-solid fa-chalkboard-user"></i>Teaching staff</p>
-            <p><i class="fa-solid fa-user-tie"></i>Non Teaching Staff</p>
-            <p><i class="fa-solid fa-people-group"></i>Total Staff</p>
-            <p><i class="fa-solid fa-sitemap"></i>Staff Hierarchy</p>
-            </div>
-            <div>
-              <p>21</p>
-              <p>12</p>
-              <p>33</p>
-              <p><i class="fa-solid fa-chevron-right"></i></p>
-            </div>
 
+
+        <div className='smalldash'>
+        
+          <div className='contained'>
+            <Bar data={YrOrg}/>
+            
           </div>
          
         </div>
-        <div className='smalldash'>
-           <div className='dashhead'>
-           <h6>Inventory</h6>
-           </div>
-          <div className=' contained'>
-            <div style={{marginLeft:"20px"}}>
-             <p>0</p>
-             <p>Item</p>
-             <p>0</p> 
-             <p>Sub-Category</p> 
-            </div>
-            <div>
-              <p>0</p>
-              <p>Category</p>
-              <p>0</p>
-              <p>Type</p>
-            </div> 
-          </div>   
-        </div>
-        <div className='smalldash'>
-           <div className='dashhead'>
-           
-            <label>Login Status</label>
-            <label style={{marginLeft:"50px"}}>Never Login list</label>
-            
-           </div>
-          <div className=' contained'>
-            <div>
-             <p>Staff</p>
-              <p>Devices</p>
-             
-            </div>
-            <div>
-              
-              <p>0</p>
-              <p><i class="fa-brands fa-apple"></i></p>
-              
-            </div> 
-          </div>   
-        </div>     
+       
+         
        </div>
-      <div className='box'>
-       <div className='smalldash'>
-        <div className='dashhead'>
-           <h5>Automated Email Alert<span>
-           <label style={{marginLeft:"700px", fontSize:"15px", marginRight:"20px"}}>Login Status</label>
-           <label style={{marginLeft:"50px", fontSize:"15px", marginRight:"20px"}}>Never Login list</label>
-           </span></h5>
-           
-          </div>
-       </div>
-       </div>
+      
 
 
         </div> 
